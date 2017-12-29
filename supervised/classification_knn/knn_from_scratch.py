@@ -53,7 +53,7 @@ def knn2(data, predict, k=3):
     return vote_result, confidence
 
 # Read in the data and process it for KNN
-df = pd.read_csv('../datasets/breast-cancer-wisconsin.data.txt')
+df = pd.read_csv('../../datasets/breast-cancer-wisconsin.data.txt')
 df.drop(['id'], 1, inplace=True)
 df.replace('?', -99999, inplace=True)
 full_data = df.astype(float).values.tolist()
